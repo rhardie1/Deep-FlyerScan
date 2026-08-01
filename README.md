@@ -1,8 +1,8 @@
 # Deep FlyerScanCT
-Deep FlyerScanCT is a computer aided detection (CAD) system for automatically identifying lung nodules in CT scans [1]. The system is a hybrid using handcrafted features from FlyerScanCT [2] and new deep learning features. This version was trained on pediatric CT scans with 2 mm slice thickness. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' found in the CT scan DICOM headers. A detection score representing the level of confidence is also provided along with each detection location. The output format provided here is similar to that used by the MONAI detection system [3,4]. 
+Deep FlyerScanCT is a computer aided detection (CAD) system for automatically identifying lung nodules in CT scans [1]. The system is a hybrid using handcrafted features from FlyerScanCT [2-4] and new deep learning features. This version was trained on pediatric CT scans with 2 mm slice thickness. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' found in the CT scan DICOM headers. A detection score representing the level of confidence is also provided along with each detection location. The output format provided here is similar to that used by the MONAI detection system [5,6]. 
 
 # License
-FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0).
+Deep FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0).
 
 Copyright © 2026 University of Dayton
 
@@ -39,21 +39,35 @@ https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=1966254
 We tested and verified case LIDC-IDRI-0003 and included the output for reference here (**deep_flyerscan_output_0003.json**). Download the folder of .dcm files for this case and verify the output matches the one provided here.
 
 ## References
-1. Messay T, Hardie RC, Rogers SK. A new computationally efficient CAD system for pulmonary nodule detection in CT imagery. Med Image Anal. 2010;14(3):390-406. doi:10.1016/j.media.2010.02.004 (https://doi.org/10.1016/j.media.2010.02.004)
 
-2. Narayanan BN, Hardie RC, Kebede TM. Performance analysis of a computer-aided detection system for lung nodules in CT at different slice thicknesses. J Med Imaging (Bellingham). 2018;5(1):014504. doi:10.1117/1.JMI.5.1.014504 (https://doi.org/10.1117/1.JMI.5.1.014504)
+1. Hardie RC, Flaute D, Narayanan BN, Trout AT, Dillman JR, Debnath P, Glenn A, Tanimoto AA. Pediatric-specific computer-aided detection of lung nodules in computed tomography scans. J Med Imaging (Bellingham). 2026 May;13(3):034502. doi: 10.1117/1.JMI.13.3.034502. Epub 2026 May 12. PMID: 42131288; PMCID: PMC13167107. https://doi.org/10.1117/1.JMI.13.3.034502
+
+2. Messay T, Hardie RC, Rogers SK. A new computationally efficient CAD system for pulmonary nodule detection in CT imagery. Med Image Anal. 2010;14(3):390-406. doi:10.1016/j.media.2010.02.004 (https://doi.org/10.1016/j.media.2010.02.004)
+
+3. Narayanan BN, Hardie RC, Kebede TM. Performance analysis of a computer-aided detection system for lung nodules in CT at different slice thicknesses. J Med Imaging (Bellingham). 2018;5(1):014504. doi:10.1117/1.JMI.5.1.014504 (https://doi.org/10.1117/1.JMI.5.1.014504)
    
-3. B. N. Narayanan, R. C. Hardie and T. M. Kebede, "Performance Analysis of Feature Selection Techniques for Support Vector Machine and its Application for Lung Nodule Detection," NAECON 2018 - IEEE National Aerospace and Electronics Conference, Dayton, OH, USA, 2018, pp. 262-266, doi: 10.1109/NAECON.2018.8556669. (https://ieeexplore.ieee.org/document/8556669)
-
-4. B. van Ginneken, S.G. Armato, B. de Hoop, S. van de Vorst, T. Duindam, M. Niemeijer, K. Murphy, A.M.R. Schilham, A. Retico, M.E. Fantacci, N. Camarlinghi, F. Bagagli, I. Gori, T. Hara, H. Fujita, G. Gargano, R. Belloti, F.D. Carlo, R. Megna, S. Tangaro, L. Bolanos, P. Cerello, S.C. Cheran, E.L. Torres and M. Prokop. "Comparing and combining algorithms for computer-aided detection of pulmonary nodules in computed tomography scans: the ANODE09 study", Medical Image Analysis 2010;14:707-722. https://anode09.grand-challenge.org/
+4. B. N. Narayanan, R. C. Hardie and T. M. Kebede, "Performance Analysis of Feature Selection Techniques for Support Vector Machine and its Application for Lung Nodule Detection," NAECON 2018 - IEEE National Aerospace and Electronics Conference, Dayton, OH, USA, 2018, pp. 262-266, doi: 10.1109/NAECON.2018.8556669. (https://ieeexplore.ieee.org/document/8556669)
 
 5. https://catalog.ngc.nvidia.com/orgs/nvidia/teams/monaitoolkit/models/monai_lung_nodule_ct_detection
    
 6. https://github.com/Project-MONAI/tutorials/tree/main/detection
 
-7. Hardie RC, Trout AT, Dillman JR, Narayanan BN, Tanimoto AA. Performance Analysis in Children of Traditional and Deep Learning CT Lung Nodule Computer-Aided Detection Systems Trained on Adults. AJR Am J Roentgenol. Published online February 21, 2024. https://doi.org/10.2214/AJR.23.30345
 
 ## BibTeX
+
+@article{10.1117/1.JMI.13.3.034502,
+author = {Russell C. Hardie and Dylan Flaute and Barath N. Narayanan and Andrew T. Trout and Jonathan R. Dillman and Pradipta Debnath and Alexandra Glenn and Aki A. Tanimoto},
+title = {{Pediatric-specific computer-aided detection of lung nodules in computed tomography scans}},
+volume = {13},
+journal = {Journal of Medical Imaging},
+number = {3},
+publisher = {SPIE},
+pages = {034502},
+keywords = {lung nodules, pediatric, computer-aided detection, Deep FlyerScan, MONAI, Education and training, CAD systems, Lung, Computed tomography, Radiology, 3D image processing, Lung cancer, Computer aided detection, Voxels, Machine learning},
+year = {2026},
+doi = {10.1117/1.JMI.13.3.034502},
+URL = {https://doi.org/10.1117/1.JMI.13.3.034502}
+}
 
   @article{Messay2010,
   title={A new computationally efficient CAD system for pulmonary nodule detection in CT imagery},
