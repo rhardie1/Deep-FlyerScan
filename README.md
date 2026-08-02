@@ -7,7 +7,7 @@ Deep FlyersScan is released under Creative Commons Attribution-NonCommercial-NoD
 Copyright © 2026 University of Dayton
 
 # Installation and Use
-This implementation has been created in MATLAB and deployed using the MATLAB compiler for Windows. 
+This implementation has been created in MATLAB and deployed using the MATLAB compiler for Windows. The implementation has been tested on a GPU with 24GB of VRAM (NVIDIA Titan RTX and NVIDIA GeForce RTX 3090). 
 
 1. Install MATLAB Runtime and the Deep FlyerScan CT executable by double clicking on **MyAppInstaller.exe** (available under Releases).
 2. The Deep FlyerScan CT app my be executed by double clicking the **deep_flyerscan.exe** executable file (created by installer), or calling the executable function from the DOS command window, or by using a batch file (see **main.bat**).
