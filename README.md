@@ -1,6 +1,10 @@
 # Pediatric Deep FlyerScanCT
 Deep FlyerScanCT is a computer aided detection (CAD) system for automatically identifying lung nodules in CT scans [1]. The system is a hybrid using handcrafted features from FlyerScanCT [2-4] and new deep learning features. This version was trained on pediatric CT scans with 2 mm slice thickness. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' found in the CT scan DICOM headers. A detection score representing the level of confidence is also provided along with each detection location. The output format provided here is similar to that used by the MONAI detection system [5,6]. 
 
+This project was funded in part by the National Institute of Biomedical Imaging and Bioengineering of the National Institutes of Health under Award Number R03EB036572. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. Aki A. Tanimoto received supporting funding from the Society for Pediatric Radiology Research and Education Foundation William H. and Victoria McAlister Young Investigator Award.
+
+The authors would like to thank Pradipta Debnath and Alex Glenn with CCHMC, as well as Emily Hardie at the University of Dayton, for performing preliminary manual nodule segmentations that were reviewed by Aki A. Tanimoto and used for training the Deep FlyerScan candidate detector.
+
 # License
 Deep FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0).
 
