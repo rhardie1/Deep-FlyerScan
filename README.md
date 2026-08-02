@@ -3,7 +3,7 @@ Deep FlyerScanCT is a computer aided detection (CAD) system for automatically id
 
 This project was funded in part by the National Institute of Biomedical Imaging and Bioengineering of the National Institutes of Health under Award Number R03EB036572. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. Aki A. Tanimoto received supporting funding from the Society for Pediatric Radiology Research and Education Foundation William H. and Victoria McAlister Young Investigator Award.
 
-The authors would like to thank Pradipta Debnath and Alex Glenn with CCHMC, as well as Emily Hardie at the University of Dayton, for performing preliminary manual nodule segmentations that were reviewed by Aki A. Tanimoto and used for training the Deep FlyerScan candidate detector.
+The authors would like to thank Emily Hardie at the University of Dayton, for performing preliminary manual nodule segmentations that were reviewed by Aki A. Tanimoto and used for training the Deep FlyerScan candidate detector.
 
 # License
 Deep FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0).
