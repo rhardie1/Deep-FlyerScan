@@ -1,4 +1,5 @@
 rem This is main.bat file which calls 
-rem flyerscan.exe with input parameters
+rem deep_flyerscan.exe with input parameters
+rem Update the path to the .exe and the path to the DICOM folder
 
-deep_flyerscan "deep_flyerscan_output_0003" ".\LIDC-IDRI-0003\01-01-2000-NA-NA-94866\3000611.000000-NA-03264"
+"C:\Program Files\deep_flyerscan\application\deep_flyerscan" "deep_flyerscan_output_0003" "E:\Medical\LIDC-IDRI\manifest-1600709154662\LIDC-IDRI\LIDC-IDRI-0003\01-01-2000-NA-NA-94866\3000611.000000-NA-03264"
